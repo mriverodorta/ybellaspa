@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import leftImg from '../public/img/logo-footer.png'
+import leftImg from '../public/img/logo-footer.webp'
 
 function AppFooter() {
     const date = new Date();

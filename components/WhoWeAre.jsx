@@ -26,7 +26,7 @@ function WhoWeAre() {
                         <p className={`experience-description ` + raleway.className}>Años de Experiencia</p>
                     </div>
                     <div className="embed-video">
-                        <YoutubeEmbed poster='/img/video-overlay.jpg' url="https://www.youtube.com/embed/_KEn2m9ZFec" />
+                        <YoutubeEmbed poster='/img/video-overlay.webp' url="https://www.youtube.com/embed/_KEn2m9ZFec" />
                     </div>
                 </div>
                 <div className="right">

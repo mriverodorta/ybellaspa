@@ -9,7 +9,7 @@ const libre = Libre_Franklin({
   
 function NumbersBanner() {
     const sectionStyles = {
-        backgroundImage: `url(/img/deserve-bg.jpg)`,
+        backgroundImage: `url(/img/deserve-bg.webp)`,
     }
     return (
         <section className="numbers-banner">

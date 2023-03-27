@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import leftImg from '../public/img/ybella-services-promo.png'
+import leftImg from '../public/img/ybella-services-promo.webp'
 import CTA from './CTA'
 import IntroTitle from './IntroTitle'
 import { Libre_Franklin } from 'next/font/google';

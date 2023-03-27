@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import cherryImage from '../public/img/group-of-friends-cherry-hero.png'
+import cherryImage from '../public/img/group-of-friends-cherry-hero.webp'
 import CTA from './CTA'
 
 function CherryBanner() {

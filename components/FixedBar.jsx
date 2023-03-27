@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import leftImg from '../public/img/ybellaspa-logo-2.png'
+import leftImg from '../public/img/ybellaspa-logo-2.webp'
 import CTA from './CTA'
 
 function FixedBar() {
