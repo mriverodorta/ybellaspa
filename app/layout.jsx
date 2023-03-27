@@ -2,6 +2,7 @@ import AppFooter from '@/components/AppFooter';
 import FixedBar from '@/components/FixedBar';
 import Header from '@/components/Header.jsx'
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.sass'
 
 export const metadata = {
@@ -17,6 +18,20 @@ export const metadata = {
     siteName: 'YBella SPA',
     locale: 'es_ES',
     type: 'website',
+    images: [
+      {
+        url: 'https://ybellaspa.com/wp-content/uploads/2022/09/YBELLA9-e1671443926845.png',
+        width: 1081,
+        height: 494,
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Estudio de Microblanding en Miami - YBella SPA',
+    description: 'Microblading, body contour, cobertura de estrías, tratamientos faciales y corporales para cualquier tipo de piel con profesionales de la belleza',
+    creator: '@mriverodorta',
+    images: ['https://ybellaspa.com/wp-content/uploads/2022/09/YBELLA9-e1671443926845.png'],
   },
   icons: {
     icon: '/img/favicons/YBELLAfavicon2-32x32.png',
@@ -75,6 +90,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <Script id="google-analytics" strategy="afterInteractive">
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NSN9796');`}
+        </Script>
         <main>
         <Header/>
         {children}
