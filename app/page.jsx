@@ -16,6 +16,10 @@ import FixedBar from '@/components/FixedBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const metadata = {
+  title: 'Estudio de Microblanding en Miami',
+}
+
 export default function Home() {
   return (
       <section className="page-content">
