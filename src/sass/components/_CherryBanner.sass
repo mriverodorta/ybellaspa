@@ -1,0 +1,31 @@
+section.cherry-banner
+    background-color: var(--color-blue)
+    position: relative
+    .container
+        .content
+            padding: 50px 0 250px 0
+            +from-md
+                padding: 150px 0
+            h2
+                color: var(--text-white)
+                font-size: 1.875rem
+                margin-bottom: 20px
+                line-height: 1.1
+                +from-md
+                    font-size: 3rem
+
+            a.cta
+                background-color: var(--color-divider)
+                color: var(--text-primary)
+                &:hover
+                    color: var(--text-secondary)
+                    background-color: var(--color-white)
+    .cherry-img
+        position: absolute
+        bottom: -2px
+        right: 0
+        img
+            max-width: 200px
+            height: auto
+            +from-lg
+                max-width: 360px

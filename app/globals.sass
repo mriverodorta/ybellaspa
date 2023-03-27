@@ -1,0 +1,35 @@
+
+@import "../src/sass"
+*, *::before, *::after
+    box-sizing: border-box
+*
+    margin: 0
+    padding: 0
+    // font: inherit
+html
+    scroll-behavior: smooth
+    color: var(--text-dark)
+    font-weight: 400
+ul[role='list'],
+ol[role='list']
+    list-style: none
+
+a
+    color: var(--text-dark)
+    +transition
+    text-decoration: none
+    &:hover
+        color: var(--text-secondary)
+
+h2
+    line-height: 30px
+    font-size: 1.75rem
+    font-weight: 300
+    color: var(--text-primary)
+    +from-md
+        line-height: 52px
+        font-size: 2.625rem
+p
+    font-size: 0.875rem
+    +from-md
+        font-size: 1rem

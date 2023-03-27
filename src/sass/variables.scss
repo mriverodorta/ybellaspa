@@ -1,0 +1,68 @@
+// Colors
+
+// Text colors
+$text-colors: (
+    'dark' : #9599A7,
+    'white' : #FFF,
+    
+    'primary': #404040,
+    'secondary': #77C3EC
+    );
+$colors: (
+    'blue' : #85C5EF,
+    'blue-light': #e0f0fb,
+    'blue-gradien-1': #9DD9F3,
+    'blue-gradien-2': #77C3EC,
+    'divider': #DCDCDE,
+    'white' : #FFF,
+    'card-bg' : #F8F8F8,
+    'fixed-bar' : #eaeaea
+);
+
+$ff-main: 'Leitura', sans-serif;
+$ff-secondary: 'Sequel', sans-serif;
+$fz-base: 1rem;
+
+// Breakpoints
+$bp-xs: 375px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1600px;
+$bp-3xl: 2000px;
+
+// Container width
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
+
+// Grid
+$grid-gutter: 20px !default;
+$grid-max-width: 1160px + ($grid-gutter * 2) !default;
+$grid-columns: 12 !default;
+
+
+:root {
+    @each $name, $cl in $text-colors {
+        --text-#{$name}: #{$cl};
+    }
+    @each $name, $cl in $colors {
+        --color-#{$name}: #{$cl};
+    }
+}
+
+// Icons
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "/fonts" !default;
+
+$ybicon-laser-pointer: "\e900";
+$ybicon-play: "\e908";
+$ybicon-face: "\e903";
+$ybicon-check: "\e904";
+$ybicon-cart: "\e905";
+$ybicon-message: "\e906";
+$ybicon-spa: "\e907";
+$ybicon-body: "\e901";
+$ybicon-eye-open: "\e902";

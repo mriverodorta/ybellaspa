@@ -1,0 +1,9 @@
+section.box-description-container
+    margin-top: 50px
+    .container
+        &>.content
+            display: grid
+            gap: 20px
+            grid-template-columns: 1fr
+            +from-md
+                grid-template-columns: repeat(3, 1fr)

@@ -1,0 +1,18 @@
+=clearfix
+    &:before, &:after
+        content: " "
+        display: table
+    &:after
+        clear: both
+
+.container
+    +clearfix
+    margin: 0 auto
+    max-width: 90vw
+    width: 100%
+    +from-lg
+        max-width: $container-lg
+    +from-xl
+        max-width: $container-xl
+    +from-xxl
+        max-width: $grid-max-width

@@ -1,0 +1,39 @@
+.youtube-embed
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+    cursor: pointer
+    .poster
+        background-color: #000
+        border-radius: 10px
+        position: absolute
+        display: block
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 100
+        // opacity: 0.3
+        pointer-events: none
+        display: none
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        justify-content: center
+        align-items: center
+        .play-icon
+            position: relative
+            font-size: 6rem
+            color: #FFF
+        &.poster-visible
+            display: flex
+    iframe, object, embed
+        position: absolute
+        top: 0
+        left: 0
+        width: calc(100% - 10vw)
+        height: 100%
+        +from-md
+            width: 100%

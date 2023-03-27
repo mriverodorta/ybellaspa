@@ -1,0 +1,50 @@
+section.who-we-are
+    margin-top: 100px
+    margin-bottom: 60px
+    .content
+        display: grid
+        grid-template-columns: 1fr
+        gap: 60px
+        +from-md
+            grid-template-columns: repeat(2, 1fr)
+        .left
+            position: relative
+            .experience
+                color: var(--text-white)
+                position: absolute
+                top: -50px
+                left: -10px
+                z-index: 150
+                background-color: var(--color-blue)
+                padding: 30px 0
+                text-align: center
+                border-radius: 50%
+                +from-md
+                    padding: 40px 30px
+                    top: -30px
+                    left: -30px
+                .years
+                    font-size: 2.2375rem
+                    font-weight: 300
+                    +from-md
+                        font-size: 4.5rem
+                .experience-description
+                    max-width: 40vw
+                    line-height: 20px
+                    font-style: italic
+                    font-weight: 500
+                    font-size: 1rem
+                    +from-md
+                        min-width: unset
+                        font-size: 1.125rem
+        .right
+            .intro-title
+                line-height: 24px
+                margin-bottom: 20px
+            h2
+                margin-bottom: 20px
+            p
+                line-height: 21px
+                margin-bottom: 34px
+                +from-md
+                    line-height: 24px
